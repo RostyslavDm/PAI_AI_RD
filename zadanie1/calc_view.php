@@ -137,6 +137,7 @@
                     <label for="id_l">Okres spłaty (lata): </label>
                     <div class="newsletter-form">
                         <input id="id_l" name="l" type="text" 
+                        placeholder="np. 10"
                         value="<?php if(isset($lata)) print($lata); ?>">
                     </div>
                 </div>
