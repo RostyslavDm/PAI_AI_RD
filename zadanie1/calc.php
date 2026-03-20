@@ -23,6 +23,18 @@
         $messages[] = 'Kwota kredytu musi być większa od 0.';
     }
 
+
+    if ($oprocentowanie == ""){
+        $messages [] = 'Nie podano oprocentowania.';
+    } 
+    else if (! is_numeric($oprocentowanie)){
+        $messages [] = 'Oprocentowanie nie jest liczbą.';
+    } 
+    else if ($oprocentowanie <= 0){
+        $messages[] = 'Oprocentowanie musi być większe od 0.';
+    }
+
+
     if ($lata == ""){
         $messages [] = 'Nie podano okresu spłaty.';
     } 
@@ -32,7 +44,6 @@
     else if ($lata <= 0){
         $messages[] = 'Okres spłaty musi być większy od 0.';
     }
-
 
     // 3. zadanie
     if (empty($messages)){
