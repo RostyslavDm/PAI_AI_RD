@@ -28,10 +28,14 @@ class CalcController extends Controller
         }
 
         return view('calc', [
-            'form'     => $form,
-            'infos'    => $infos,
-            'messages' => $messages,
-            'result'   => $result,
+            'form'         => $form,
+            'infos'        => $infos,
+            'messages'     => $messages,
+            'result'       => $result,
+            'page_title'       => 'Kalkulator Kredytowy',
+            'page_description' => 'Kalkulator Kredytowy',
+            'page_header'      => '<div class="logo-icon">🏦</div>
+                        <span class="logo-text">Kalkulator<span>Kredytowy</span></span>',
         ]);
     }
 
