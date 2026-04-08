@@ -1,0 +1,104 @@
+/* Styles added for credit calculator */
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
+}
+
+header {
+	position:static; 
+	padding: 20px 40px; 
+	border-bottom: 1px solid var(--border-glass);
+}
+
+.calc-wrapper {
+	width: 100%;
+	max-width: 460px;
+	padding: 40px;
+	border-radius: 24px;
+}
+
+.field-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	font-size: 0.85rem;
+	font-weight: 500;
+	color: var(--text-secondary);
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+select {
+	width: 100%;
+	padding: 18px 24px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid var(--global-glass);
+	border-radius: 16px;
+	color: var(--text-primary);
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1rem;
+	outline: none;
+	transition: all 0.3s ease;
+	appearance: none;
+}
+
+select:focus {
+	border-color: var(--accent-gold);
+	background: rgba(255, 255, 255, 0.08);
+}
+
+select option{
+	background: #1a1a2e;
+}
+
+.errors{
+	margin-top: 20px;
+	padding: 14px 26px;
+	background: rgba(255, 61, 90, 0.08);
+	border: 1px solid rgba(255,61,90,0.3);
+	border-radius: 12px;
+	color: var(--accent-red);
+	font-size: 0.9rem;
+}
+
+.errors ul {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.infos{
+	margin-top: 20px;
+	padding: 14px 26px;
+	background: rgba(61, 171, 255, 0.08);
+	border: 1px solid rgba(61, 203, 255, 0.3);
+	border-radius: 12px;
+	color: var(--accent-blue);
+	font-size: 0.9rem;
+}
+
+.infos ul {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.result {
+	margin-top: 20px;
+	padding: 20px 24px;
+	background: rgba(0, 212, 170, 0.07);
+	border: 1px solid rgba(0, 212, 170, 0.25);
+	border-radius: 14px;
+	line-height: 2;
+}
