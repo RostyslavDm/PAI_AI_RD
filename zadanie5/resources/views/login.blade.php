@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('footer') 💵💵💵 @endsection
+
 @section('content')
     <h2 class="section-title" style="font-size:1.8rem; margin-bottom:28px;">Logowanie</h2>
 

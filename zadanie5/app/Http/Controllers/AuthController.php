@@ -16,7 +16,12 @@ class AuthController extends Controller
         if (session('auth_user')) {
             return redirect('/calc');
         }
-        return view('login');
+        return view('login', [
+            'page_title'       => 'Logowanie – Kalkulator Kredytowy',
+            'page_description' => 'Logowanie',
+            'page_header'      => '<div class="logo-icon">🏦</div>
+                <span class="logo-text">Kalkulator<span>Kredytowy</span></span>',
+        ]);
     }
 
     public function login(Request $request)
@@ -35,7 +40,13 @@ class AuthController extends Controller
             return redirect('/calc');
         }
 
-        return view('login', ['error' => 'Nieprawidłowy login lub hasło.']);
+        return view('login', [
+            'error'            => 'Nieprawidłowy login lub hasło.',
+            'page_title'       => 'Logowanie – Kalkulator Kredytowy',
+            'page_description' => 'Logowanie',
+            'page_header'      => '<div class="logo-icon">🏦</div>
+                <span class="logo-text">Kalkulator<span>Kredytowy</span></span>',
+        ]);
     }
 
     public function logout()
